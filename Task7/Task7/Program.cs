@@ -127,10 +127,37 @@ namespace Task7
             //} 
             #endregion
 
+            #region Task 5
+            //int c5 = Readint("Enter the value of C: ");
+            //int len5 = Readint("Enter the size of the array: ");
+            //int[] a5 = new int[len5];
+
+            //for (int i = 0; i < len5; i++)
+            //{
+            //    a5[i] = Readint($"Enter element {i + 1}: ");
+            //}
+            //double greaterNum = double.MinValue;
+
+            //foreach (double num in a5)
+            //{
+            //    if (num < c5 && num > greaterNum)
+            //    {
+            //        greaterNum = num;
+            //    }
+
+            //}
+            //if (greaterNum != double.MinValue)
+            //{
+            //    Console.WriteLine($"The greatest number in the array that is lesser than C is:{greaterNum}");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("No number in the array is lesser than C");
+            }
+        #endregion
 
 
 
-        }
 
 
 
@@ -138,8 +165,16 @@ namespace Task7
 
 
 
-            #region Method
-            static int Readint(string caption)
+    }
+
+
+
+
+
+
+
+        #region Method
+        static int Readint(string caption)
 
             {
             l1:
