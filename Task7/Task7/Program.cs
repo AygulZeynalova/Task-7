@@ -167,8 +167,8 @@ namespace Task7
 
             for (int i = 0; i < len6; i++)
             {
-                x6[i] = rand6.Next(0, 100);
-                y6[i] = rand6.Next(0, 100);
+                x6[i] = rand6.Next();
+                y6[i] = rand6.Next();
 
             }
 
@@ -229,149 +229,149 @@ namespace Task7
 
             #region Task 8
 
-            //int[] x8 = new int[14];
-            //int[] y8 = new int[14];
-            //Random rand8 = new Random();
-            //int[] results = new int[14];
-            //int count = 0; 
+            int[] x8 = new int[14];
+            int[] y8 = new int[14];
+            Random rand8 = new Random();
 
-            //for (int i = 0; i < 14; i++)
-            //{
-            //    x8[i] = rand8.Next();
-            //    y8[i] = rand8.Next();
+            int[] results = new int[14];
+            int count8 = 0;
 
-            //    int result8 = x8[i] * y8[i];
-            //    if (result8 > 0)
-            //    {
-            //        results[count] = result8;
-            //        count++;
-            //    }
-            //}
+            for (int i = 0;i < 14;i++)
+            {
+                x8[i] = rand8.Next();
+                y6[i]= rand8.Next();
 
-            //for (int i = 0; i < count; i++)
-            //{
-            //    Console.WriteLine(results[i]);
-            //}
+                int result8 = x8[i]*y6[i];
+                if (result8 > 0)
+                {
+                    results[count8] = result8;
+                     count8++;
+                }
+            }
+            for (int i = 0; i < count8; i++)
+            {
+                Console.WriteLine(results[i]);
+            }
 
 
             #endregion
 
             #region Task 9
-            //int[] a9 = new int[25];
-            //Random rand9 = new Random();
-            //for (int i = 0; i < 25; i++)
-            //{
-            //    a9[i] = rand9.Next();
-            //}
 
-            //int[] squaredArray = new int[8];
-            //int[] dividedArray = new int[25 - 8];
 
-            //for (int i = 0; i < 8; i++)
-            //{
-            //    squaredArray[i] = a9[i] * a9[i]; 
-            //}
+            int[]a9= new int[25];  
+            Random rand9 = new Random();
+            for (int i = 0;i<25;i++)
+            {
+                a9[i] = rand9.Next();
+            }
+            int[]squaredArray= new int[8];
+            int[] dividedArray = new int[25 - 8];
 
-            //for (int i = 8; i < 25; i++)
-            //{
-            //    dividedArray[i - 8] = a9[i] / 4; 
-            //}
+            for (int i = 0;i<8 ; i++)
+            {
+                squaredArray[i] = a9[i]* a9[i];
+            }
+            for(int i = 0;i<25 ; i++)
+            {
+                dividedArray[i - 8] = a9[i]/4;
+            }
+            Console.WriteLine("Squared array:");
+            for (int i = 0; i < 8; i++)
+            {
+                Console.WriteLine(squaredArray[i]);
+            }
 
-            //Console.WriteLine("Squared array:");
-            //for (int i = 0; i < 8; i++)
-            //{
-            //    Console.WriteLine(squaredArray[i]);
-            //}
+            Console.WriteLine("Divided array:");
+            for (int i = 0; i < 25 - 8; i++)
+            {
+                Console.WriteLine(dividedArray[i]);
+            }
 
-            //Console.WriteLine("Divided array:");
-            //for (int i = 0; i < 25 - 8; i++)
-            //{
-            //    Console.WriteLine(dividedArray[i]);
-            //} 
-            #endregion
+        #endregion
 
             #region Task 10
-            //l10:
-            //    int len9 = Readint("Enter the size of the array:");
+       
+            int len9 = Readint("Enter the size of the array:");
 
-            //    int[] a10 = new int[len9];
+            int[] a10 = new int[len9];
 
-            //    Random rand10 = new Random();
+            Random rand10 = new Random();
 
-            //    for (int i = 0; i < len9; i++)
-            //    {
-            //        a10[i] = rand10.Next();
-            //    }
-            //    int maxNegative = int.MinValue;
-            //    for (int i = 0; i < len9; i++)
-            //    {
-            //        if (a10[i] < 0 && a10[i] > maxNegative)//müəllim bu yolu copilotdan tapdım.Ancaq niyə  a10[i] > maxNegative olmalıdı anlamadım.
-            //        {
-            //            maxNegative = a10[i];
-            //        }
-            //    }
+            for (int i = 0; i < len9; i++)
+            {
+                a10[i] = rand10.Next();
+            }
+            int maxNegative = int.MinValue;
+            for (int i = 0; i < len9; i++)
+            {
+                if (a10[i] < 0 && a10[i] > maxNegative)//müəllim bu yolu copilotdan tapdım.Ancaq niyə  a10[i] > maxNegative olmalıdı anlamadım.
+                {
+                    maxNegative = a10[i];
+                }
+            }
 
-            //    if (maxNegative != int.MinValue)
-            //    {
-            //        Console.WriteLine("The maximum negative number in the array is: " + maxNegative);
-            //    }
-            //    else
-            //    {
-            //        Console.WriteLine("There are no negative numbers in the array.");
+            if (maxNegative != int.MinValue)
+            {
+                Console.WriteLine("The maximum negative number in the array is: " + maxNegative);
+            }
+            else
+            {
+                Console.WriteLine("There are no negative numbers in the array.");
 
-            //    }
+            }
             #endregion
 
             #region Task 11
 
-            //int len11 = Readint("Enter the size of the array:");
-            //int[] x11 = new int[len11];
+            int len11 = Readint("Enter the size of the array:");
+            int[] x11 = new int[len11];
 
-            //Random rand11 = new Random();
+            Random rand11 = new Random();
 
-            //for (int i = 0; i < len11; i++)
-            //{
-            //    x11[i] = rand11.Next(0, 100);
-            //}
+            for (int i = 0; i < len11; i++)
+            {
+                x11[i] = rand11.Next(0, 100);
+            }
 
-            //Array.Sort(x11);
-            //Array.Reverse(x11);
+            Array.Sort(x11);
+            Array.Reverse(x11);
 
-            //Console.Write("The numbers of the array in descending order: ");
-            //for (int i = 0; i < len11; i++)
-            //{
-            //    Console.Write(x11[i] + " ");
-            //} 
+            Console.Write("The numbers of the array in descending order: ");
+            for (int i = 0; i < len11; i++)
+            {
+                Console.Write(x11[i] + " ");
+            }
             #endregion
 
             #region Task 12
-            //int[] x12 = new int[20];
-            //Random rand12 = new Random();
+            int[] x12 = new int[20];
+            Random rand12 = new Random();
 
-            //for (int i = 0; i < x12.Length; i++)
-            //{
-            //    x12[i] = rand12.Next();
-            //}
+            for (int i = 0; i < x12.Length; i++)
+            {
+                x12[i] = rand12.Next();
+            }
 
-            //int[] firstHalf = new int[10];
-            //int[] secondHalf = new int[20 - 10];
+            int[] firstHalf = new int[10];
+            int[] secondHalf = new int[20 - 10];
 
-            //double sum = 0;
-            //for (int i = 0; i < firstHalf.Length; i++)
-            //{
-            //    sum += x12[i];
-            //}
-            //double arithmeticMean12 = sum / (firstHalf.Length);
+            double sum12 = 0;
+            for (int i = 0; i < firstHalf.Length; i++)
+            {
+                sum12 += x12[i];
+            }
+            double arithmeticMean12 = sum12 / (firstHalf.Length);
 
-            //double product = 1;
-            //for (int i = 0; i < secondHalf.Length; i++)
-            //{
-            //    product *= x12[i];
-            //}
-            //double geometricMean12 = Math.Pow(product, 1.0 / (secondHalf.Length));
+            double product = 1;
+            for (int i = 0; i < secondHalf.Length; i++)
+            {
+                product *= x12[i];
+            }
+            double geometricMean12 = Math.Pow(product, 1.0 / (secondHalf.Length));
 
-            //Console.WriteLine($"The arithmetic mean of the first half is:{arithmeticMean12}");
-            //Console.WriteLine($"The geometrical mean of second half is {geometricMean12}"); 
+            Console.WriteLine($"The arithmetic mean of the first half is:{arithmeticMean12}");
+            Console.WriteLine($"The geometrical mean of second half is {geometricMean12}");
             #endregion
 
 
@@ -381,14 +381,14 @@ namespace Task7
             #region Method
             static int Readint(string caption)
             {
-            l1:
+            lr:
                 Console.WriteLine(caption);
                 string cStr = Console.ReadLine();
                 bool state = int.TryParse(cStr, out int c);
                 if (!state)
                 {
                     Console.WriteLine("Insert a valid number:");
-                    goto l1;
+                    goto lr;
                 }
                 return c;
             }
